@@ -38,3 +38,25 @@ Line 12 would return `3` without causing an error, because the varibale `length`
 
 ### Question 11
 The function would return the list `[50, 100, 150]` just as it did before, without throwing an error. Althouth the `const` keyword was used for `discounted`, when applying const to an array, it turns the array's reference constant, not the elements within the array. This means that the array is still mutable, an error will only be thrown if attempting to assigning an entierly different object to `discounted`, rather than altering the object it already points to. Because `push` only changes the object it already point to, the elements are added to the list without issue. 
+
+
+### Question 12 
+1. `student.name`
+2. `student["Grade Year"]`
+3. `student.greeting();`
+4. `student["Favorite Teacher"].name`
+5. `student.courseLoad[0]`
+
+
+### Question 13
+1. `'32'`, this is because Javascript converts the 2 to a string, and does string addition, concatentation '3' and '2' to '32'
+2. `1`, upon seeing the `-` opperator Javascript converts the string to the number type, and proceeds with arithmetic subtraction
+3. `3`, Javascript attempt to convert null into a number type for the arthmetic addition. null maps to the number type 0, hence the sum is 3.
+4. `3null`, Javascript treats the null like a string, and proceeds with concatenation rather than arithmetic addition
+5. `4`, the boolean is converted to a number, and true is mapped to the value of 1, thus the sum is 4.
+6. `0`, Jacascript converts both the boolean and the null to number types. Both map to 0, resulting in the sum being 0.
+7. `"3undefined"`, like null Jacasvript attempts to convert undefined to a string type to conduct string addition, which concatenates the two strings
+8. `NaN`, for the minus operator, Javasrcipt attemp to convert both to string type. '3' maps to 3, but undefeined maps to NaN, meaning not a number. When arithmetic is done to NaN, the output is also NaN
+
+
+### Question 3 
