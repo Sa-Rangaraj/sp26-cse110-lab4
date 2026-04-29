@@ -81,3 +81,16 @@ The difference between the regular comparison `==` andthe strict comparison `===
 After being called, the first thing the function does is create a constant array. It then enters a for loop where it iterates from i=0 to i=3, as the array that was passed in has a length of 3. During each iteration of the loop a value is pushed onto `newArray`. This value is derived by first getting `arr[i]`. This value is then passed into the callback function. The caller specified the callback function to be the `doSomething` function, so `arr[i]` is passed into `doSomething`, and the return value of this function is what is pushed onto the array, until the loop ends and the array is returned. 
 
 The callback function returns the number it was passed in times 2. Thus, the numbers being pushed onto the array and returned will be 1*2, 2*2, and 3*2, resulting in the aray `[2,4,6]`
+
+### Question 18 
+[Link to code file](./part2-question18.js)
+
+### Question 19 
+Due to the timouts, the output would be in the following order: 
+```
+1
+4
+3
+2
+```
+
