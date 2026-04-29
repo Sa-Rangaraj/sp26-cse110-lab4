@@ -66,3 +66,11 @@ The function would return the list `[50, 100, 150]` just as it did before, witho
 17. `False`, the === operator is a strict comparison, meaning a type conversion isn't convirmed. As the types are not equivalent, the objects being compared are not considered equalivalent, thus false is returned.
 18. `False`, a loose comparison is being preformed,so the boolean is converted to a number, True maps to 1, which is not equal to 2, thus false is returned.
 19. `True`, the function `Boolean()` maps any non-zero number to true, thus Boolean(2)=True. As both values are true, they are equal, and true is returned. 
+
+### Question 15 
+
+The difference between the regular comparison `==` andthe strict comparison `===` is how they compare object of different types. The regular comparison will force type conversions so that the two object being compared match in type. This is what leads to `False` and `0` being considered equal values, despite one being a boolean and the other being a number. On the other hand, the strict comparison does not force conversions, and does consider a type mismatch a sign of inequality. If this operator was used to compare a boolean and a number it would return false, as the types are different. 
+
+### Question 16 
+
+[Link to code file](./part2-question16.js)
