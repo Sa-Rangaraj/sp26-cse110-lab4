@@ -59,4 +59,10 @@ The function would return the list `[50, 100, 150]` just as it did before, witho
 8. `NaN`, for the minus operator, Javasrcipt attemp to convert both to string type. '3' maps to 3, but undefeined maps to NaN, meaning not a number. When arithmetic is done to NaN, the output is also NaN
 
 
-### Question 3 
+### Question 14 
+14. `True`, Javascript converts the string to a number type, then preforms an arithmetic comparison between them. Because the number 2 is greater than the number one, the inequality is connect, thus true is returned
+15. `False`, because the comparison is between two strings, Javascript preforms a lexographical comparison, which is done by comparing the unicode values starting from the leftmost characters. '2' has a greater unicode value than '1', the inequality is incorrect, thus false is output.
+16. `True`, the == operator is a loose comparison, meaning Javascript does preform a type conversion. Specifically it converts the string into a number, as which point two number 2's are being compared, which are arithmetically equivalent.
+17. `False`, the === operator is a strict comparison, meaning a type conversion isn't convirmed. As the types are not equivalent, the objects being compared are not considered equalivalent, thus false is returned.
+18. `False`, a loose comparison is being preformed,so the boolean is converted to a number, True maps to 1, which is not equal to 2, thus false is returned.
+19. `True`, the function `Boolean()` maps any non-zero number to true, thus Boolean(2)=True. As both values are true, they are equal, and true is returned. 
